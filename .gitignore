@@ -2,6 +2,7 @@
 tmp/
 src/gopkg.in/
 src/golang.org/
+src/google.golang.org/
 src/github.com/
 bin/
 pkg/

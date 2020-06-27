@@ -4,7 +4,6 @@ BINDIR	= $(CURDIR)/bin
 PROGRAMS = check_nebula_certificate_expiration
 
 depend:
-	env GOPATH=$(GOPATH) go get -u github.com/hako/durafmt
 	env GOPATH=$(GOPATH) go get -u github.com/slackhq/nebula/cert
 
 build:
@@ -26,6 +25,8 @@ clean:
 
 distclean: clean
 	/bin/rm -rf src/github.com
+	/bin/rm -rf src/google.golang.org
+	/bin/rm -rf src/golang.org
 
 uninstall:
 	/bin/rm -f $(DESTDIR)/usr/lib64/nagios/plugins/check_nebula_certificate_expiration
