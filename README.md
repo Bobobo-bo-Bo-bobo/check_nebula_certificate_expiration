@@ -1,3 +1,7 @@
+**_Note:_** Because I'm running my own servers for several years, main development is done at at https://git.ypbind.de/cgit/check_nebula_certificate_expiration/
+
+----
+
 # Preface
 [Nebula VPN](https://github.com/slackhq/nebula) is a scalable and portable VPN mesh using certificates to encrypt and authenticate
 clients. Because Nebula VPN uses it's own certificate format and does not uses standard x509 certificates normal
