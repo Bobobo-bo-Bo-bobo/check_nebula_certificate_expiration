@@ -68,6 +68,11 @@ func main() {
 		os.Exit(UNKNOWN)
 	}
 
+	if critSec <= 0 || warnSec <= 0 {
+		fmt.Fprintf(os.Stderr, "Error: Warning / critical thresholds must be positive values\n")
+		os.Exit(UNKNOWN)
+	}
+
 	raw, err := readCertificateFile(*certFile)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %s\n", err.Error())
